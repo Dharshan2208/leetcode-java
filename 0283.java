@@ -1,21 +1,15 @@
 class Solution {
-    public int findTheWinner(int n, int k) {
+    public void moveZeroes(int[] nums) {
+        int j = 0;
 
-        // brute force like o(n square)
-        List<Integer> people = new ArrayList<>();
+        for (int i = 0; i < nums.length; i++) {
+            if (nums[i] != 0) {
+                int temp = nums[i];
+                nums[i] = nums[j];
+                nums[j] = temp;
 
-        for (int i = 1; i <= n; i++) {
-            people.add(i);
+                j++;
+            }
         }
-
-        int curr = 0;
-
-        while (people.size() > 1) {
-            curr = (curr + k - 1) % people.size();
-            people.remove(curr);
-        }
-
-        return people.get(0);
-
     }
 }
