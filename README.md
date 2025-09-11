@@ -16,11 +16,11 @@ These solutions are written by me for learning and reference purposes.
 - [ ]  Q41 In O(1) Space Complexity
 - [ ]  Q70 In O(1) Space Complexity
 - [ ]  Q82 In O(1) Space Using Pointers
+- [ ]  Q98 Optimise it
 - [ ]  Q107 I just reversed the answer so will do it properly
 - [ ]  Q189 In O(1) Space
 - [ ]  Q234 In O(1) Space
 - [ ]  Q238 In O(1) Space productexcept self one
 - [ ]  Q1823 Josephus Problem Have to do it in O(n) time
 
-- Will do on 03-09-2025
-- [ ] Q94,Q144,Q145 Without recursion traversal have to do
+- [ ] Q144,Q145 Without recursion traversal have to do
