@@ -19,13 +19,19 @@ class Solution {
             return null;
         }
 
-        TreeNode temp = root.left;
-        root.left = root.right;
-        root.right = temp;
+        // TreeNode temp = root.left;
+        // root.left = root.right;
+        // root.right = temp;
 
         // Recursivly inverting the trees children
-        invertTree(root.left);
-        invertTree(root.right);
+        // invertTree(root.left);
+        // invertTree(root.right);
+
+        TreeNode left = invertTree(root.left);
+        TreeNode right = invertTree(root.right);
+
+        root.left = right;
+        root.right = left;
 
         return root;
     }
